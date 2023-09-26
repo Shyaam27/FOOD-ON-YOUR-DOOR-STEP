@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .hotel-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .hotel-item {
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .hotel-item:hover {
+            transform: scale(1.05);
+        }
+        .hotel-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .hotel-item h2 {
+            margin: 10px;
+        }
+        .menu-item {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+        .order-form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .order-form:hover {
+            transform: scale(1.05);
+        }
+        label, input, textarea {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Hotel Gallery</h1>
+
+<div class="hotel-gallery">
+    <div class="hotel-item" onclick="showMenu('Hotel 1')">
+        <img src="https://w0.peakpx.com/wallpaper/101/95/HD-wallpaper-burgers-fast-food-delicious-food-sandwiches-harmful-food.jpg" alt="Hotel 1">
+        <h2><a href="file:///C:/Users/Shyaam/Desktop/food/food/menu.html">Hotel 1</a></h2>
+    </div>
+    <div class="hotel-item" onclick="showMenu('Hotel 2')">
+        <img src="https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg" alt="Hotel 2">
+        <h2><a href="#menu-hotel2">Hotel 2</a></h2>
+    </div>
+    <div class="hotel-item" onclick="showMenu('Hotel 3')">
+        <img src="https://media.istockphoto.com/id/1368935114/photo/vegan-asian-recipes-assorted-brown-rice-curry-masala-poke-do.webp?b=1&s=170667a&w=0&k=20&c=NnzIipbu6JE7wojUJMAk85jaDd7WCCWtg2DSJLFuhBI=" alt="Hotel 3">
+        <h2><a href="#menu-hotel3">Hotel 3</a></h2>
+    </div>
+    <div class="hotel-item" onclick="showMenu('Hotel 4')">
+        <img src="https://burst.shopifycdn.com/photos/flatlay-iron-skillet-with-meat-and-other-food.jpg?width=1000&format=pjpg&exif=0&iptc=0" alt="Hotel 4">
+        <h2><a href="#menu-hotel4">Hotel 4</a></h2>
+    </div>
+    <!-- Add more hotels as needed -->
+</div>
+</html>

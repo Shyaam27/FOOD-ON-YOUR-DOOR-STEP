@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Menu</title>
+    <link rel="stylesheet" href="s.css">
+</head>
+<body>
+
+<h1>Menu</h1>
+
+<div class="menu-item">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhJF0gE9nAMfTKaF4GCS9ToDHxW_GtwPDk_nQw07PI6MCMXN1U9pk2C1stEv2EvkyGM8&usqp=CAU" alt="Item 1">
+    <h2>Burgers</h2>
+    <p>Seasoned Beef Burgers - Prairie Meats</p>
+    <p>Price: $10</p>
+    <input type="number" min="0" placeholder="Quantity" id="quantity1">
+    <button onclick="addToCart('Item 1', 10, 'quantity1')">Add to Cart</button>
+</div>
+
+<div class="menu-item">
+    <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2014/01/grilled-sandwich-4.jpg" alt="Item 2">
+    <h2>Sandwich</h2>
+    <p>Indian Grilled Sandwich  (With Veggies).</p>
+    <p>Price: $12</p>
+    <input type="number" min="0" placeholder="Quantity" id="quantity2">
+    <button onclick="addToCart('Item 2', 12, 'quantity2')">Add to Cart</button>
+</div>
+
+<!-- Add more menu items as needed -->
+
+<div class="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <div id="total-bill"></div>
+<nav class="navbar">
+        <a href="file:///C:/Users/Shyaam/Desktop/food/food/mark.html" class="btn">Make an Order</a>
+      </nav>
+</div>
+
+<style>
+body {
+  background-image: url('https://www.shopurfood.com/blogs/wp-content/uploads/2020/10/10-emerging-tips-to-train-your-staff-to-handle-online-food-orders.png');
+  background-repeat: no-repeat;
+  background-attachment: 100%;
+  background-size: cover;
+}
+</style>
+<script src="sc.js"></script>
+ <script src="js/m.js"></script>
+</body>
+</html>
